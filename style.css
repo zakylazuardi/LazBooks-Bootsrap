@@ -1,0 +1,33 @@
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card img {
+  width: 100%;
+  height: 390px; /* Tinggi gambar tetap besar */
+  object-fit: cover;
+  border-bottom: 1px solid #ddd; /* Garis pemisah antara gambar dan konten */
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.jumbotron {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 0.3rem;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 2rem 0;
+}

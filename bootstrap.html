@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LazBooks</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="logo/l-logo.png" alt="Logo" width="40" height="40" class="me-2"></i> LazBooks</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#product">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section with Carousel -->
+  <section id="home" class="mb-5">
+    <!-- Carousel -->
+    <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="promosi/Five-Books-to-Manage-Personal-Finance-1-scaled.jpg" class="d-block w-100" alt="Finance Books">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Finance Books</h2>
+            <p>Temukan kebijaksanaan keuangan terbaik untuk mengamankan masa depan Anda.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="promosi/best-motivational-books.webp" class="d-block w-100" alt="Motivation Books">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Motivation Books</h2>
+            <p>Ubah pola pikir Anda dengan buku motivasi best seller kami</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="promosi/1593126871-1593126871_goodreads_misc.png" class="d-block w-100" alt="Sci-Fi Books">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Sci-Fi Books</h2>
+            <p>Jelajahi dunia baru dan petualangan futuristik</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="container mt-5">
+      <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to LazBooks</h1>
+        <p class="lead">Tujuan terpadu Anda untuk buku-buku berkualitas dalam genre Keuangan, Motivasi, dan Fiksi Ilmiah.</p>
+        <hr class="my-4">
+        <p>Gratis ongkir untuk pesanan diatas Rp200.000!! Gunakan kode "MINDSET" saat checkout diskon 25%</p>
+        <a class="btn btn-primary btn-lg" href="#product" role="button">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- Best Seller Books -->
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Best Sellers</h2>
+      <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+              <img src="foto-produk/finance/The_Pychology_of_Money.jpg" class="card-img-top" alt="The Psychology of Money">
+              <div class="card-body">
+                <h5 class="card-title">The Psychology of Money</h5>
+                <p class="card-text">Morgan Housel | Rp72.000</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal4">View Details</button>
+              </div>
+            </div>
+          </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="foto-produk/finance/9786020333175_rich-dad-poor-dad-_edisi-revisi_.avif" class="card-img-top" alt="Rich Dad Poor Dad">
+            <div class="card-body">
+              <h5 class="card-title">Rich Dad Poor Dad</h5>
+              <p class="card-text">Robert Kiyosaki | Rp51.000</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal1">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="foto-produk/motivation/Atomic_Habit.avif" class="card-img-top" alt="Atomic Habits">
+            <div class="card-body">
+              <h5 class="card-title">Atomic Habits</h5>
+              <p class="card-text">James Clear | Rp81.000</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal2">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="foto-produk/sci-fi/knqdyjpuzo9qvnldlsn8qa.avif" class="card-img-top" alt="Dune">
+            <div class="card-body">
+              <h5 class="card-title">Dune</h5>
+              <p class="card-text">Frank Herbert | Rp119.000</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal3">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section id="product" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Books Collection</h2>
+      
+      <!-- Category Tabs -->
+      <ul class="nav nav-pills mb-4 justify-content-center" id="categoryTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="finance-tab" data-bs-toggle="pill" data-bs-target="#finance" type="button" role="tab">Finance</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="motivation-tab" data-bs-toggle="pill" data-bs-target="#motivation" type="button" role="tab">Motivation</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="scifi-tab" data-bs-toggle="pill" data-bs-target="#scifi" type="button" role="tab">Sci-Fi</button>
+        </li>
+      </ul>
+      
+      <!-- Tab Content -->
+<div class="tab-content" id="categoryTabsContent">
+  <!-- Finance Books -->
+  <div class="tab-pane fade show active" id="finance" role="tabpanel">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="foto-produk/finance/9786020333175_rich-dad-poor-dad-_edisi-revisi_.avif" class="card-img-top" alt="Rich Dad Poor Dad">
+          <div class="card-body">
+            <h5 class="card-title">Rich Dad Poor Dad</h5>
+            <p class="card-text">Robert Kiyosaki | Rp51.000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal1">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="foto-produk/finance/9786025336324_The-Intelligent-Investor.avif" class="card-img-top" alt="The Intelligent Investor">
+          <div class="card-body">
+            <h5 class="card-title">The Intelligent Investor</h5>
+            <p class="card-text">Benjamin Graham | Rp165.000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModalinvestor">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="foto-produk/finance/9786020622279_think_and_gro.avif" class="card-img-top" alt="Think and Grow Rich">
+          <div class="card-body">
+            <h5 class="card-title">Think and Grow Rich</h5>
+            <p class="card-text">Napoleon Hill | Rp105.000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModalthink">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="foto-produk/finance/The_Pychology_of_Money.jpg" class="card-img-top" alt="The Psychology of Money">
+          <div class="card-body">
+            <h5 class="card-title">The Psychology of Money</h5>
+            <p class="card-text">Morgan Housel | Rp72.000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal4">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Motivation Books -->
+  <div class="tab-pane fade" id="motivation" role="tabpanel">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="foto-produk/motivation/Atomic_Habit.avif" class="card-img-top" alt="Atomic Habits">
+          <div class="card-body">
+            <h5 class="card-title">Atomic Habits</h5>
+            <p class="card-text">James Clear | Rp81.000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal2">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="foto-produk/motivation/7-habits.png" class="card-img-top" alt="The 7 Habits of Highly Effective People">
+          <div class="card-body">
+            <h5 class="card-title">The 7 Habits of Highly Effective People</h5>
+            <p class="card-text">Stephen R. Covey | Rp90.000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModalthe7">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="foto-produk/motivation/mindset.jpg" class="card-img-top" alt="Mindset: The New Psychology of Success">
+          <div class="card-body">
+            <h5 class="card-title">Mindset: The New Psychology of Success</h5>
+            <p class="card-text">Carol S. Dweck | Rp70.000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModalsuccess">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="foto-produk/motivation/9780812981605_Power-Of-Habit-Why-We-Do-What-We-Do-In-Life-And-Business-S.avif" class="card-img-top" alt="The Power Of Habit">
+          <div class="card-body">
+            <h5 class="card-title">The Power Of Habit</h5>
+            <p class="card-text">Charles Duhigg | Rp90.000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModalhabit">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sci-Fi Books -->
+  <div class="tab-pane fade" id="scifi" role="tabpanel">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="foto-produk/sci-fi/knqdyjpuzo9qvnldlsn8qa.avif" class="card-img-top" alt="Dune">
+          <div class="card-body">
+            <h5 class="card-title">Dune</h5>
+            <p class="card-text">Frank Herbert | Rp119.000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal3">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="foto-produk/sci-fi/7180qjGSgDL._SY522_.jpg" class="card-img-top" alt="1984">
+          <div class="card-body">
+            <h5 class="card-title">1984</h5>
+            <p class="card-text">George Orwell | Rp71.000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal1984">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="foto-produk/sci-fi/416FntWyJQL._SY445_SX342_.jpg" class="card-img-top" alt="Brave New World">
+          <div class="card-body">
+            <h5 class="card-title">Brave New World</h5>
+            <p class="card-text">Aldous Huxley | Rp80.000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModalbrave">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="foto-produk/sci-fi/71OPafHmyQL._SY522_.jpg" class="card-img-top" alt="The Hitchhiker's Guide to the Galaxy">
+          <div class="card-body">
+            <h5 class="card-title">The Hitchhiker's Guide to the Galaxy</h5>
+            <p class="card-text">Douglas Adams | Rp.99.000</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModalgalaxy">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  
+  <!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">About Us</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Our Story</h3>
+        <p>Didirikan pada tahun 2025, LazBooks dimulai sebagai toko buku kecil dengan misi menyebarkan pengetahuan dan menginspirasi pembaca. Selama bertahun-tahun, kami telah berkembang menjadi salah satu toko buku online terkemuka, yang mengkhususkan diri pada genre Keuangan, Motivasi, dan Fiksi Ilmiah.</p>
+        <p>Tim kami yang terdiri dari para pembaca dan pakar buku yang bersemangat menyusun setiap pilihan dengan cermat untuk memastikan pelanggan kami mendapatkan akses ke judul-judul terbaik di pasar.</p>
+        <h3>Our Mission</h3>
+        <p>Untuk menyediakan buku-buku berkualitas tinggi yang dapat diakses dan mendidik, menginspirasi, dan menghibur pembaca dari semua latar belakang dan minat.</p>
+        <h3>Our Vision</h3>
+        <p>Menjadi sumber pengetahuan dan literatur yang paling tepercaya, membina komunitas global pembelajar dan pembaca seumur hidup.</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Our Team</h3>
+        <div class="row text-center">
+          <div class="col-md-6 mb-4">
+            <div class="team-member">
+              <img src="foto-team/Picsart_24-07-24_18-19-45-514.jpg" alt="CEO" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+              <h5 class="mt-2">Muhammad Zaky Lazuardi</h5>
+              <p>Founder & CEO</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="team-member">
+              <img src="foto-team/IMG-20250115-WA0004(2).jpg" alt="Book Curator" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+              <h5 class="mt-2">Michael Saylor</h5>
+              <p>Co-Founder</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="team-member">
+              <img src="foto-team/IMG-20250115-WA0004(2).jpg" alt="Marketing Director" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+              <h5 class="mt-2">Jensen Huang</h5>
+              <p>Marketing Director</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="team-member">
+              <img src="foto-team/IMG-20250115-WA0004(2).jpg" alt="Customer Support" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+              <h5 class="mt-2">Samuel Christ</h5>
+              <p>Customer Support Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="your.email@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Subject of your message">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="How can we help you?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h4>Our Location</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d126903.73087477128!2d106.61272793252428!3d-6.297649201208541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1salam%20sutera!5e0!3m2!1sen!2sid!4v1738805815256!5m2!1sen!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="mt-3">
+            <h4>Get in Touch</h4>
+            <p><i class="fas fa-map-marker-alt me-2"></i>  Tangerang Selatan, Banten, Indonesia</p>
+            <p><i class="fas fa-phone me-2"></i> +6212 3456 7899</p>
+            <p><i class="fas fa-envelope me-2"></i> info@lazbooks.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">LazBooks</h5>
+          <p>Tujuan utama Anda untuk buku-buku bergenre Keuangan, Motivasi, dan Fiksi Ilmiah.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Connect</h5>
+          <div class="d-flex justify-content-center justify-content-lg-start mt-4">
+            <a href="#" class="me-4 text-reset"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#" class="me-4 text-reset"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="me-4 text-reset"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="me-4 text-reset"><i class="fab fa-linkedin fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2025 LazBooks. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Book Detail Modals -->
+  <!-- Modal Rich Dad Poor Dad -->
+  <div class="modal fade" id="bookModal1" tabindex="-1" aria-labelledby="bookModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookModalLabel1">Rich Dad Poor Dad</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="foto-produk/finance/9786020333175_rich-dad-poor-dad-_edisi-revisi_.avif" class="img-fluid rounded" alt="Rich Dad Poor Dad">
+            </div>
+            <div class="col-md-7">
+              <h5>Robert Kiyosaki</h5>
+              <p><strong>Price:</strong> Rp51.000</p>
+              <p><strong>Category:</strong> Finance</p>
+              <p><strong>Pages:</strong> 336</p>
+              <p><strong>Published:</strong> April 1997</p>
+              <p><strong>Description:</strong> The #1 personal finance book of all time that challenges the way people think about money. Rich Dad Poor Dad tells the story of Robert Kiyosaki and his two dads—his real father and the father of his best friend, his rich dad—and the ways in which both men shaped his thoughts about money and investing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Atomic Habits -->
+  <div class="modal fade" id="bookModal2" tabindex="-1" aria-labelledby="bookModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookModalLabel2">Atomic Habits</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="foto-produk/motivation/Atomic_Habit.avif" class="img-fluid rounded" alt="Atomic Habits">
+            </div>
+            <div class="col-md-7">
+              <h5>James Clear</h5>
+              <p><strong>Price:</strong> Rp81.000</p>
+              <p><strong>Category:</strong> Motivation</p>
+              <p><strong>Pages:</strong> 320</p>
+              <p><strong>Published:</strong> October 2018</p>
+              <p><strong>Description:</strong> An easy and proven way to build good habits and break bad ones. A revolutionary system to get 1% better every day. Learn how tiny changes can yield remarkable results over time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Dune -->
+  <div class="modal fade" id="bookModal3" tabindex="-1" aria-labelledby="bookModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookModalLabel3">Dune</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="foto-produk/sci-fi/knqdyjpuzo9qvnldlsn8qa.avif" class="img-fluid rounded" alt="Dune">
+            </div>
+            <div class="col-md-7">
+              <h5>Frank Herbert</h5>
+              <p><strong>Price:</strong> Rp119.000</p>
+              <p><strong>Category:</strong> Sci-Fi</p>
+              <p><strong>Pages:</strong> 896</p>
+              <p><strong>Published:</strong> August 1965</p>
+              <p><strong>Description:</strong> Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the "spice" melange, a drug capable of extending life and enhancing consciousness.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal The Psychology of Money -->
+  <div class="modal fade" id="bookModal4" tabindex="-1" aria-labelledby="bookModalLabel4" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookModalLabel4">The Psychology of Money</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="foto-produk/finance/The_Pychology_of_Money.jpg" class="img-fluid rounded" alt="The Psychology of Money">
+            </div>
+            <div class="col-md-7">
+              <h5>Morgan Housel</h5>
+              <p><strong>Price:</strong> Rp72.000</p>
+              <p><strong>Category:</strong> Finance</p>
+              <p><strong>Pages:</strong> 256</p>
+              <p><strong>Published:</strong> September 2020</p>
+              <p><strong>Description:</strong> Money―investing, personal finance, and business decisions―is typically taught as a math-based field, where data and formulas tell us exactly what to do. But in the real world people don’t make financial decisions on a spreadsheet. They make them at the dinner table, or in a meeting room, where personal history, your own unique view of the world, ego, pride, marketing, and odd incentives are scrambled together.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal The Intellegence Investor -->
+  <div class="modal fade" id="bookModalinvestor" tabindex="-1" aria-labelledby="bookModalLabelinvestor" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookModalLabelinvestor">The Intellegence Investor</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="foto-produk/finance/9786025336324_The-Intelligent-Investor.avif" class="img-fluid rounded" alt="The Intellegence Investor">
+            </div>
+            <div class="col-md-7">
+              <h5>Benjamin Graham</h5>
+              <p><strong>Price:</strong> Rp165.000</p>
+              <p><strong>Category:</strong> Finance</p>
+              <p><strong>Pages:</strong> 640</p>
+              <p><strong>Published:</strong> February 2006</p>
+              <p><strong>Description:</strong> The greatest investment advisor of the twentieth century, Benjamin Graham, taught and inspired people worldwide. Graham's philosophy of "value investing" -- which shields investors from substantial error and teaches them to develop long-term strategies -- has made The Intelligent Investor the stock market bible ever since its original publication in 1949.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Think and Grow Rich -->
+  <div class="modal fade" id="bookModalthink" tabindex="-1" aria-labelledby="bookModalLabelthink" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookModalLabelthink">Think and Grow Rich</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="foto-produk/finance/9786020622279_think_and_gro.avif" class="img-fluid rounded" alt="Think and Grow Rich">
+            </div>
+            <div class="col-md-7">
+              <h5>Napoleon Hill</h5>
+              <p><strong>Price:</strong> Rp105.000</p>
+              <p><strong>Category:</strong> Finance</p>
+              <p><strong>Pages:</strong> 320</p>
+              <p><strong>Published:</strong> Desember 2007</p>
+              <p><strong>Description:</strong> Think and Grow Rich has been called the “Granddaddy of All Motivational Literature.” It was the first book to boldly ask, “What makes a winner?” The man who asked and listened for the answer, Napoleon Hill, is now counted in the top ranks of the world's winners himself. The most famous of all teachers of success spent “a fortune and the better part of a lifetime of effort” to produce the “Law of Success” philosophy that forms the basis of his books and that is so powerfully summarized in this one.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal The 7 Habits of Highly Effective People -->
+  <div class="modal fade" id="bookModalthe7" tabindex="-1" aria-labelledby="bookModalLabelthe7" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookModalLabelthe7">The 7 Habits of Highly Effective People</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="foto-produk/motivation/7-habits.png" class="img-fluid rounded" alt="The 7 Habits of Highly Effective People">
+            </div>
+            <div class="col-md-7">
+              <h5>Stephen R. Covey</h5>
+              <p><strong>Price:</strong> Rp90.000</p>
+              <p><strong>Category:</strong> Motivation</p>
+              <p><strong>Pages:</strong> 464</p>
+              <p><strong>Published:</strong> May 2020</p>
+              <p><strong>Description:</strong> This beloved classic presents a principle-centered approach for solving both personal and professional problems. With penetrating insights and practical anecdotes, Stephen R. Covey reveals a step-by-step pathway for living with fairness, integrity, honesty, and human dignity—principles that give us the security to adapt to change and the wisdom and power to take advantage of the opportunities that change creates.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Mindset: The New Psychology of Success -->
+  <div class="modal fade" id="bookModalsuccess" tabindex="-1" aria-labelledby="bookModalLabelsuccess" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookModalLabelsuccess">Mindset: The New Psychology of Success</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="foto-produk/motivation/mindset.jpg" class="img-fluid rounded" alt="Mindset: The New Psychology of Success">
+            </div>
+            <div class="col-md-7">
+              <h5>Carol S. Dweck PhD</h5>
+              <p><strong>Price:</strong> Rp70.000</p>
+              <p><strong>Category:</strong> Motivation</p>
+              <p><strong>Pages:</strong> 320</p>
+              <p><strong>Published:</strong> Desember 2007</p>
+              <p><strong>Description:</strong> After decades of research, world-renowned Stanford University psychologist Carol S. Dweck, Ph.D., discovered a simple but groundbreaking idea: the power of mindset. In this brilliant book, she shows how success in school, work, sports, the arts, and almost every area of human endeavor can be dramatically influenced by how we think about our talents and abilities. People with a fixed mindset—those who believe that abilities are fixed—are less likely to flourish than those with a growth mindset—those who believe that abilities can be developed. Mindset reveals how great parents, teachers, managers, and athletes can put this idea to use to foster outstanding accomplishment.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal The Power Of Habit -->
+  <div class="modal fade" id="bookModalhabit" tabindex="-1" aria-labelledby="bookModalLabelhabit" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookModalLabelthink">The Power Of Habit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="foto-produk/motivation/9780812981605_Power-Of-Habit-Why-We-Do-What-We-Do-In-Life-And-Business-S.avif" class="img-fluid rounded" alt="The Power Of Habit">
+            </div>
+            <div class="col-md-7">
+              <h5>Charles Duhigg</h5>
+              <p><strong>Price:</strong> Rp90.000</p>
+              <p><strong>Category:</strong> Motivation</p>
+              <p><strong>Pages:</strong> 416</p>
+              <p><strong>Published:</strong> January 2014</p>
+              <p><strong>Description:</strong> In The Power of Habit, award-winning business reporterCharles Duhigg takes us to the thrilling edge of scientific discoveries that explain why habits exist and how they can be changed. Distilling vast amounts of information into engrossing narratives that take us from the boardrooms of Procter & Gamble to the sidelines of the NFL to the front lines of the civil rights movement, Duhigg presents a whole new understanding of human nature and its potential. At its core, The Power of Habit contains an exhilarating argument: The key to exercising regularly, losing weight, being more productive, and achieving success is understanding how habits work. As Duhigg shows, by harnessing this new science, we can transform our businesses, our communities, and our lives.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 1984 -->
+  <div class="modal fade" id="bookModal1984" tabindex="-1" aria-labelledby="bookModalLabel1984" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookModalLabelthink">1984</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="foto-produk/sci-fi/7180qjGSgDL._SY522_.jpg" class="img-fluid rounded" alt="1984">
+            </div>
+            <div class="col-md-7">
+              <h5> George Orwell</h5>
+              <p><strong>Price:</strong> Rp71.000</p>
+              <p><strong>Category:</strong> Sci-Fi</p>
+              <p><strong>Pages:</strong> 328</p>
+              <p><strong>Published:</strong> Desember 2007</p>
+              <p><strong>Description:</strong> Winston Smith toes the Party line, rewriting history to satisfy the demands of the Ministry of Truth. With each lie he writes, Winston grows to hate the Party that seeks power for its own sake and persecutes those who dare to commit thoughtcrimes. But as he starts to think for himself, Winston can’t escape the fact that Big Brother is always watching...</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Brave New World -->
+  <div class="modal fade" id="bookModalbrave" tabindex="-1" aria-labelledby="bookModalLabelbrave" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookModalLabelbrave">Brave New World</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="foto-produk/sci-fi/416FntWyJQL._SY445_SX342_.jpg" class="img-fluid rounded" alt="Brave New World">
+            </div>
+            <div class="col-md-7">
+              <h5>Aldous Huxley</h5>
+              <p><strong>Price:</strong> Rp80.000</p>
+              <p><strong>Category:</strong> Sci-Fi</p>
+              <p><strong>Pages:</strong> 288</p>
+              <p><strong>Published:</strong> October 2006</p>
+              <p><strong>Description:</strong> Aldous Huxley's profoundly important classic of world literature, Brave New World is a searching vision of an unequal, technologically-advanced future where humans are genetically bred, socially indoctrinated, and pharmaceutically anesthetized to passively uphold an authoritarian ruling order–all at the cost of our freedom, full humanity, and perhaps also our souls. “A genius [who] who spent his life decrying the onward march of the Machine” (The New Yorker), Huxley was a man of incomparable talents: equally an artist, a spiritual seeker, and one of history’s keenest observers of human nature and civilization. Brave New World, his masterpiece, has enthralled and terrified millions of readers, and retains its urgent relevance to this day as both a warning to be heeded as we head into tomorrow and as thought-provoking, satisfying work of literature. Written in the shadow of the rise of fascism during the 1930s, Brave New World likewise speaks to a 21st-century world dominated by mass-entertainment, technology, medicine and pharmaceuticals, the arts of persuasion, and the hidden influence of elites.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal The Hitchhiker's Guide to the Galaxy -->
+  <div class="modal fade" id="bookModalgalaxy" tabindex="-1" aria-labelledby="bookModalLabelgalaxy" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookModalLabelgalaxy">The Hitchhiker's Guide to the Galaxy</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="foto-produk/sci-fi/71OPafHmyQL._SY522_.jpg" class="img-fluid rounded" alt="The Hitchhiker's Guide to the Galaxy">
+            </div>
+            <div class="col-md-7">
+              <h5>Douglas Adams</h5>
+              <p><strong>Price:</strong> Rp99.000</p>
+              <p><strong>Category:</strong> Sci-Fi</p>
+              <p><strong>Pages:</strong> 224</p>
+              <p><strong>Published:</strong> August 2004</p>
+              <p><strong>Description:</strong> Seconds before Earth is demolished to make way for a galactic freeway, Arthur Dent is plucked off the planet by his friend Ford Prefect, a researcher for the revised edition of The Hitchhiker’s Guide to the Galaxy who, for the last fifteen years, has been posing as an out-of-work actor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
